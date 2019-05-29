@@ -1,0 +1,26 @@
+#logo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.box1 {
+    margin-bottom: 8px;
+}
+
+.box1 img,
+.box2 img {
+    margin: 0 40px;
+    margin-top: 30px;
+}
+
+.box1,
+.box2 {
+    display: flex;
+    justify-content: center;
+}
+
+#logo-css3 {
+    margin-top: 27px;
+}
