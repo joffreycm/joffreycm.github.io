@@ -28,3 +28,7 @@
 .icon-box-icon {
     width: 300px;
 }
+
+ol {
+    list-style-type: square;
+}
