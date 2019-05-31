@@ -74,6 +74,8 @@ ol {
     background: white;
     border: 1px solid #202020;
     color: #202020;
+    border: solid;
+    border-radius: 4px;
 }
 
 #contact .btn.btn-brand.btn-outline:hover {
