@@ -1,0 +1,333 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+
+    <!-- The HTML5 Shim is required for older browsers, mainly older versions IE -->
+    <!--[if lt IE 9]>
+            <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+            <link rel="stylesheet" type="text/css" media="screen" href="https://content.compilatio.net/css/ie7fix.css" />
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+    </div>
+    <![endif]-->
+
+    <link rel="icon" href="new/images/favicon.ico" type="image/x-icon" />
+
+    <!-- DEBUT : FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Maven+Pro:700' rel='stylesheet' type='text/css' />
+    <!-- FIN : FONTS -->
+
+    <!-- DEBUT : CSS -->
+    <link rel="stylesheet" type="text/css" href="https://content.compilatio.net/css/compilatio.css" />
+    <!--<link rel="stylesheet" type="text/css" href="https://content.compilatio.net/css/theme/ui.all.css" />  Si on supprimer cette ligne, suppriemr de content aussi -->
+    <link rel="stylesheet" type="text/css" media="all" href="https://content.compilatio.net/css/bgcss/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://content.compilatio.net/css/bgcss/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://content.compilatio.net/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://content.compilatio.net/css/fluid.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://content.compilatio.net/css/jquery.timepicker.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)" href="https://content.compilatio.net/css/mobile.css" />
+    <!-- FIN : CSS -->
+
+    <!-- DEBUT : JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+    var libraryInTitle = "Document à traiter";
+    var libraryOutTitle = "Unavailable text";
+    var labelCheckAll = "Tout cocher";
+    var labelUncheckAll = "Tout décocher";  
+    var statusStarTitle = "Document neutre";
+    var statusStaredTitle = "Document important";
+    var statusGreenFlagTitle = "Ajouter à la bibliothèque de références";
+    var statusRedFlagTitle = "Document à supprimer";
+    var moving = "Déplacement de";
+    var documents = "Documents";
+    //var document = ""; // Utilise ou ? Remplacer le nom de la variable si elle est utilise car fait plante le site sous IE !!!!
+    var moreInfoComp = "Renseigner les informations complémentaires";
+    var lessInfoComp = "Masquer les informations complémentaires";
+    //mon compte
+    var successEmailChecking = "Le compte associé à l\'adresse \"{adresse}\" est en attente de confirmation. Vous recevrez vos données de connexion après validation de l\'administrateur de l\'établissement.";
+    var alertEmailChecking = "Votre e-mail est validé";
+    var successEmailNote = "(Vous pouvez changer l'adresse e-mail à laquelle vos alertes sont envoyées : nouveau dépôt de document, date limite de rendu atteinte ...)";
+    var alertEmailNote = "(Un e-mail de confirmation a été envoyé à votre nouvelle adresse.)";
+    var errorEmailChecking = "Votre e-mail est invalide";
+    var cancelEmail = "Annuler le changement d'adresse";
+    var cancelEmail2 = "et utiliser";
+    var errorPasswordChecking = "Les mots de passe doivent être identiques";
+    var lessInfoComp = "Masquer les informations complémentaires";
+    var moreInfoComp = "Renseigner les informations complémentaires";
+    var globName = "Nom";
+    var globFirstname = "Prénom";
+    var globEmail = "E-mail";
+    var globUrl = "Saisissez une URL";
+    var yes = "oui";
+    var no = "non";
+    // Uploadfile JQuery (locale.js)
+    var docTooBig = "Le fichier est trop volumineux";
+    var docTooSmall = "Le fichier est trop petit";
+    var fileTypeNotAllowed = "Ce type de fichier n'est pas accepté";
+    var numberDocMaxReached = "Nombre maximum de documents atteint";
+    var emptyFile = "Le fichier est vide";
+    var errorUpload = "Problème lors de l'envoi du fichier";
+    var errorDL = "Erreur";
+    var start = "Lancer";
+    var cancel = "Annuler";
+    var destroy = "Supprimer";
+</script>    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> Si on met celui la, le drag N drop ne fonctionne plus car curCSS n'existe plus dans 1.8 --> 
+    <script type='text/javascript' src='https://www.compilatio.net/wp-content/themes/theme1411/js/modernizr.js?ver=2.0.6'></script>
+    <script type='text/javascript' src='https://content.compilatio.net/js/jquery-ui-1.8.19.custom.min.js'></script>
+    <script type='text/javascript' src='https://content.compilatio.net/js/jquery.ui.datepicker-fr.js'></script>
+    <script type='text/javascript' src='https://content.compilatio.net/js/iphone-style-checkboxes.js'></script>
+    <script type="text/javascript" src="https://content.compilatio.net/js/menu-langues.js"></script>
+    <script type="text/javascript" src="https://content.compilatio.net/js/functions.publicFolder.js"></script>
+    <script type='text/javascript' src='https://content.compilatio.net/js/jquery.timepicker.min.js'></script>
+    <!-- Animations show/hide row tableau -->
+    <script type="text/javascript" src="https://content.compilatio.net/js/jquery.sliderow.js"></script>
+    <!-- message defilant -->
+    <script type="text/javascript" src="https://content.compilatio.net/js/li-scroller/jquery.li-scroller.1.0.js"></script>
+    <!--Spécial infobulles-->
+    <script type="text/javascript" charset="utf-8" src="https://content.compilatio.net/js/bt-0.9.5-rc1/other_libs/jquery.hoverIntent.minified.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://content.compilatio.net/js/jquery.bgiframe.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://content.compilatio.net/js/bt-0.9.5-rc1/jquery.bt.js"></script>
+    
+    <script type="text/javascript" src="https://content.compilatio.net/js/validate.js"></script> <!--Validation entrees formulaires-->
+    <script type="text/javascript" src="https://content.compilatio.net/js/function.fixPlaceholder.js"></script> <!-- Fix placeholder/val pour formulaire -->
+    <script type="text/javascript" src="https://content.compilatio.net/js/function.showmypage.js"></script>
+    <script type='text/javascript' src='https://content.compilatio.net//js/news_functions.js'></script> <!-- Pour ajouter ou supprimer des lignes auteurs -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function() {
+            
+            // Label des checkbox iphone
+            $(':checkbox.iphone-style').iphoneStyle({
+              checkedLabel: 'oui',
+              uncheckedLabel: 'non'
+            }); 
+           
+           // Apparition du cadre pour l'auteur a l'initialisation
+            if ($('#collect-ck-add-author').prop('checked') || !$('#collect-ck-author').prop('checked'))
+                $("#collect-authors").show();
+            else
+                $("#collect-authors").hide();
+                
+            $('.iPhoneCheckContainer').click(function () {
+                if ($('#collect-ck-add-author').prop('checked') || !$('#collect-ck-author').prop('checked'))
+                    $("#collect-authors").show();
+                else
+                    $("#collect-authors").hide();
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="global global-public">
+            <section id="heading">
+                <header class="blason">
+                    <div>
+                        <h1 class="magister clearfix" id="magister">
+                            <a href="https://www.compilatio.net/user/v4/"><img src="https://content.compilatio.net/images/user/magister.png" alt="Magister by Compilatio" width="220" height="60" /></a>
+                        </h1>
+ 
+                    </div>
+                </header>
+            </section>
+
+            <section class="clearfix full">
+                <div id="collect-form">
+                    <header id="headings" class="border-title">
+                        <div class="hgroup">
+                            <h1 class="icon th-ultra magister"><span class="big-share-page">&rarr;</span>Page publique de collecte et partage - Rapport de stage FI 2019</h1>
+                        </div>
+                        <div class="wrapper separator">
+                            <div class="half-box fleft">
+                                <div class="box-3">
+                                    <ul class="list-item">
+                                        <li>Établissement : <b>Universite Paris Evry - Magister</b></li>
+                                        <li>Enseignant : <b>Christophe Profeta</b></li>
+                                        <li>Dossier : <b> ziics - Rapport de stage FI 2019</b></li>
+                                         
+                                    </ul>
+                                     
+                                    <div class="align-submit">
+                                        <a href="https://www.compilatio.net/collecte/ziics" target="_blank" class="button th-big icon"><span class="file-add">&rarr;</span>Je remets un document à mon professeur</a>
+                                    </div>
+                                        
+                                </div>
+                            </div>
+                                                        
+    
+                            
+                        </div>
+                    </header>
+                    
+                    <div class="content files">
+                        
+                        <h2>Liste des documents du dossier "Rapport de stage FI 2019"</h2>
+                        
+                        <form id="files-form" action="#" method="POST">
+                            <table id="files-table">
+                                <thead>
+                                    <tr>
+                                        <td colspan="9">
+                                            <div class="table-head-right fright">
+                                                    <div class="order-list">
+                                                    Trier par : &nbsp;
+                                                    <select name="select_doc" id="select_doc" onChange="trierParPublicFolder(this.value, 'ziics');" style="font-size: 11px; font-family: Arial, Helvetica, sans-serif;">
+                                                        <option value="date" selected>Date de dépôt</option>
+                                                        <option value="plagiat" >Résultat</option>
+                                                    </select>
+                                                    <a class="icon sort" title="Tri descendant" href="#" onclick="updateTri('9a4714ed5269da7475227d0aabd0a9b5');"><span class="asc">Sort</span></a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+<tr>
+    <td class="file-icon">
+        <a href="#" title="" class="icon img-icon th-big tip"><span class="pdf">format</span></a>
+    </td>
+    <td class="headings-description"  >
+        <div class="description">
+            <h6>2oafslg6 - <span >Chargé le 02/06/2019 à 14:22 </span></h6>
+            <p></p>
+        </div>
+    </td>
+    <!-- Pastille -->
+    <td id="td_loader_f5ba2613f42932e2dcf500d627904462" class="analyse-status">
+        <div class='analyse-status-container'><div class=''></div></div>
+    </td>
+    <!-- Progress bar -->
+    <td class="progress " id="td_progressbar_f5ba2613f42932e2dcf500d627904462">
+        <div class="bar-container">
+            <div class="th-gray ui-progressbar ui-widget ui-widget-content ui-corner-all magister" id="progress-bar-1"   ><span class="queue">Analysé</span></div>
+        </div>
+    </td>
+</tr><tr>
+    <td class="file-icon">
+        <a href="#" title="" class="icon img-icon th-big tip"><span class="pdf">format</span></a>
+    </td>
+    <td class="headings-description"   >
+        <div class="description">
+            <h6>53c4qkmn - <span >Chargé le 28/05/2019 à 14:37 </span></h6>
+            <p></p>
+        </div>
+    </td>
+    <!-- Pastille -->
+    <td id="td_loader_1d99cecd5a83c0e738219bc03c2af4db" class="analyse-status">
+        <div class='analyse-status-container'><div class=''></div></div>
+    </td>
+    <!-- Progress bar -->
+    <td class="progress " id="td_progressbar_1d99cecd5a83c0e738219bc03c2af4db">
+        <div class="bar-container">
+            <div class="th-gray ui-progressbar ui-widget ui-widget-content ui-corner-all magister" id="progress-bar-1"   ><span class="queue">Analysé</span></div>
+        </div>
+    </td>
+</tr>                                </tbody>
+
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="9">
+                                            <div class="table-head-right fright">
+                                                <div class="order-list">
+                                                    Trier par : &nbsp;
+                                                    <select name="select_doc" id="select_doc" onChange="trierParPublicFolder(this.value, 'ziics');" style="font-size: 11px; font-family: Arial, Helvetica, sans-serif;">
+                                                        <option value="date" selected>Date de dépôt</option>
+                                                        <option value="plagiat" >Résultat</option>
+                                                    </select>
+                                                    <a class="icon sort" title="Tri descendant" href="#" onclick="updateTri('9a4714ed5269da7475227d0aabd0a9b5');"><span class="asc">Sort</span></a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+
+                            </table>
+                        </form>
+                        
+                    </div>
+                        </div>
+            </section>
+        </div>
+
+                    <footer id="footer">
+                <div>
+                    <div class="wrapper">
+                        <div class="footer-widget-area">
+                            <div class="footer-text">Copyright © 2005-2019 COMPILATIO.NET. Tous droits réservés <span id="server-name">arcanin</span></div>
+                            <div class="footer-link">
+                                <div id="nav_menu-4">
+                                    <div class="menu-footer-menu-container">
+                                        <ul id="menu-footer-menu" class="menu">
+                                            <li id="menu-item-632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-632"><a href="https://www.compilatio.net/a-propos-de-compilatio/">A propos de Compilatio</a></li>
+                                            <li id="menu-item-633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-633"><a href="https://content.compilatio.net/documents/FR_MAGISTER_COPYRIGHT_CGU.pdf" target="_blank">Conditions générales d'utilisation</a></li>
+                                            <li id="menu-item-634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-634"><a href="https://www.compilatio.net/mentions-legales/">Mentions légales</a></li>
+                                            <!--<li id="menu-item-633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-633"><a href="../kit-media/"></a></li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script type='text/javascript' src='https://content.compilatio.net/js/affix.js'></script>
+        <script type='text/javascript' src='https://content.compilatio.net/js/bootstrap-tooltip.js'></script>
+        <script type='text/javascript' src='https://content.compilatio.net/js/jquery.fancybox.pack.js'></script>
+
+        <!-- File upload -->
+        <script src="https://content.compilatio.net/js/vendor/jquery.ui.widget.js"></script>
+        <!-- The Templates plugin is included to render the upload/download listings -->
+        <script src="https://content.compilatio.net/js/tmpl.min.js"></script>
+        <script src="https://content.compilatio.net/js/jquery.iframe-transport.js"></script>
+        <!-- The basic File Upload plugin -->
+        <script src="https://content.compilatio.net/js/jquery.fileupload.js"></script>
+        <!-- The File Upload user interface plugin -->
+        <script src="https://content.compilatio.net/js/jquery.fileupload-ui.js"></script>
+        <!-- The localization script -->
+        <script src="https://content.compilatio.net/js/locale.js"></script>
+        <!-- The main application script -->
+        <script src="https://content.compilatio.net/js/main.js"></script>
+        <script type='text/javascript'>
+            $(document).bind('drop dragover', function (e) {
+                e.preventDefault();
+            });
+            $(document).bind('dragover', function (e) {
+                var dropZone = $('#dropable-loader');
+                var dropContent = $('.dropable-loader *');
+                dropContent.each(function(){
+                    var current = $(this);
+                    if (e.target === dropZone[0] || e.target === current[0] ){
+                        dropZone.addClass('ui-state-active');
+                    }else{
+                        dropZone.removeClass('ui-state-active');
+                    }
+                });
+            });
+        </script>
+    </body>
+
+</html>
+        
+        <script type='text/javascript'>
+            $("#headings .hgroup h1").data("seuil1", "10"); // Attribut data HTML5 ajoute recupere dans news_functions.js pour recuperer facilement la valeur du seuil en JS
+            $("#headings .hgroup h1").data("seuil2", "25"); // Attribut data HTML5 ajoute recupere dans news_functions.js pour recuperer facilement la valeur du seuil en JS
+        </script>
+        
+        <script type='text/javascript' src='https://content.compilatio.net/js/news_functions.js'></script>
+    </body>
+</html>
