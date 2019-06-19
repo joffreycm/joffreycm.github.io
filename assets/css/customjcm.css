@@ -25,8 +25,13 @@
     margin-top: 27px;
 }
 
+.icon-box {
+    margin: 70px;
+}
+
 .icon-box-icon {
-    width: 300px;
+    width: 200px;
+    display: flex;
 }
 
 ol {
@@ -88,7 +93,7 @@ ol {
 }
 
 .mouse-icon {
-    left: 12%;
+    left: 12.5%;
 }
 
 .progress-bar {
