@@ -16,9 +16,15 @@
 }
 
 .box1,
-.box2 {
+.box2,
+.box3 {
     display: flex;
     justify-content: center;
+}
+
+.box3 img {
+    margin: 0 33px;
+    margin-top: 30px;
 }
 
 #logo-css3 {

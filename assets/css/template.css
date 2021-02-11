@@ -1873,7 +1873,7 @@ button {
 
 .extra-nav::before,
 .nav-toggle::before,
-.inner-header::before {
+.::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -1881,7 +1881,7 @@ button {
     margin-right: -1px;
 }
 
-.inner-header {
+. {
     position: relative;
     z-index: 1;
     height: 100%;
